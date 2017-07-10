@@ -1,0 +1,223 @@
+/*导航条hover禁用*/
+.hoverLineNo{
+	position: absolute;
+	width: 146px;
+	top: 34px;
+	z-index: 1;	
+	display: block;
+	border-top: 3px #AC8E4C solid;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+#ForDes:hover .hoverLineNo{
+	width: 146px!important;
+}
+/*副导航*/
+.ForTwoNav{
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	height: 61px;
+}
+.ForTNul{
+	display: inline-block;
+	overflow: hidden;
+	width: 70%;
+}
+.ForTNul li{
+	float: left;
+	width: 25%;
+	border-right: 2px solid #262626;
+}
+.ForTNul li a{
+	color: white;
+	font-size: 12px;
+	line-height: 58px;
+	font-weight: bolder;
+	font-family: GothamBold;
+}
+/*左边两个小按钮*/
+.ForTwoBtn{
+	position: fixed;
+	top: 22%;
+	left: 1.5%;
+}
+.ForTwoBtn a{
+	display: inline-block;
+	margin-bottom: 43%;
+	cursor: pointer;
+}
+/*轮播*/
+.carousel{
+	max-width: 1380px;
+	margin: 0 59px;
+}
+.carousel-control.left ,.carousel-control.right{
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    filter: none;
+    background-repeat: no-repeat;
+}
+.carousel-control{
+	text-shadow: none;
+	color: transparent;
+}
+.carousel-control:hover, .carousel-control:focus {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: 0;
+}
+.ForLIcon{
+	width: 24px;
+	height: 38px;
+	background-image: url(../img/icon/左大箭头.png);
+}
+.ForRIcon{
+	width: 24px;
+	height: 38px;	
+	background-image: url(../img/icon/右大箭头.png);
+}
+.ForTextDiv{
+	position: absolute;
+	top: 32%;
+	left: 62px;
+	letter-spacing: 1px;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+}
+.ForTextDiv h3{
+	letter-spacing: 1px;
+	font-family: GothamBold;
+}
+.ForTextDiv h1{
+	font-size: 30px;
+	margin-top: 20px;
+}
+.ForTextDiv p{
+	font-weight: normal;
+	margin-top: 20px;	
+	line-height: 20px;
+}
+.ForTextDiv span{
+	display: inline-block;
+	margin-top: 20px;
+}
+.ForRightTextDiv{
+	color: white;
+	left: auto;
+	right: 62px;
+}
+.ForTextDiv h2{
+	margin-top: 20px;
+	font-size: 55px;
+	font-family: "caslonbi";
+	font-weight: normal;
+}
+/*模特广告图*/
+.ForModelAdv{
+	position: relative;
+	max-width: 1380px;
+	margin: 40px 59px;
+}
+.ForModelAdv .ForTextDiv{
+	left: auto;
+	right: 176px;
+	top: 47%;
+}
+.ForModelAdv .ForTextDiv p{
+	letter-spacing: 0px;
+}
+.ForModelAdv .ForCenterText{
+	left: 27%;
+	right: auto;
+	top: 39%;
+}
+.ForCenterText{
+	color: white;
+}
+.ForCenterText h3{
+	margin-top: 20px;
+	font-size: 55px;
+	font-family: "caslonbi";
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+.ForModelAdv .ForLooks{
+	color: white;
+	right: auto;
+	left: 55px;
+	top: 39%;
+}
+/*风尚造型*/
+.ForFashion{
+	overflow: hidden;
+}
+.ForModel{
+	width: 33.33333%;
+	float: left;
+	padding: 0 1.5%;
+	text-align: center;
+}
+.ForModel img{
+	width: 100%;
+}
+.ForModel p{
+	font-size: 28px;
+	font-family: caslonbi;
+}
+.ForModel span{
+	font-size: 12px;
+	font-weight: bold;	
+	margin-top: 6%;
+	display: inline-block;	
+}
+.ForModel span a:hover{
+	color: #555;
+}
+.ForImgLine img:last-child{
+	display: none;
+}
+.ForModel img:last-child{
+	display: none;
+}
+.ForModelAdv img:nth-child(2){
+	display: none;
+}
+/*下拉列表*/
+.ForSmallNav{
+	display: none;
+}
+.ForDropList{
+	position: absolute;
+	width: 17.5%;
+	z-index: 2;
+	border: 1px solid white;
+	display: none;
+}
+.ForDropList ul{
+	overflow: hidden;
+}
+.ForDropList ul li{
+	float: left;
+	width: 101%;
+	background: black;
+	color: white;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+
+}
+.ForDropList ul li a{
+	font-size: 10px;
+}
+.ForDropList ul li:hover{
+	background: white;
+	color: black;
+}
+.ForDropList ul li:hover a{
+	color: black;
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" charset="utf-8" />
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<link rel="stylesheet" href="Bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link media="screen and (max-width:1024px)" rel="stylesheet" type="text/css" href="css/smallIndex.css" />
+		<script type="text/javascript" src="Bootstrap/js/jquery-1.11.3.js" ></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="Bootstrap/js/bootstrap.js" ></script>
+		<style>
+			@font-face {
+				font-family:GothamBold; 
+				src: url("fonts/Gotham-Bold.otf");
+			}
+			@font-face {
+				font-family: caslonbi;
+				src: url("fonts/caslonbi.ttf");
+			}
+			@font-face {
+				font-family: GothamBook;
+				src: url("fonts/GothamRnd-Book.otf");
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--点击直接到顶部-->
+		<div class="topTop">
+			<a href="#"><i class="glyphicon glyphicon-chevron-up"></i><span style="display: none;">TOP</span></a>
+		</div>
+		
+		<!--头部黑色条-tips-->
+		<div id="TopTips" class="headerTopTips">
+			<p>夏季酬宾，现已开始。<a href="#">查看详情></a></p>
+			<a id="plusIcon" href="#" class="plusIcon">
+				<span class="glyphicon glyphicon-plus"></span>
+			</a>
+		</div>
+		
+		<!--显示顶部详细信息-->
+		<div id="showTopTips" class="headerTopTipsPlus">
+			<p>夏季酬宾，现已开始。</p>
+			<p>低至五折优惠，更享免费配送。 </p>
+			<p><a href="#"><strong>查看详情></strong></a></p>
+			<a href="#" id="closeIcon" class="closeIcon">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+		</div>
+		
+		<!--导航条-->
+		<div id="fixNav" class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav navbar-left leftPart">
+					<li class="nav-guide"><a href="#"><span class="glyphicon glyphicon-map-marker"></span>精品店指南</a></li>
+					<li class="nav-contact"><a href="#"><span class="Icon earphoneIcon"></span>联系我们</a>
+						<!--联系我们弹出框-->
+						<div class="contactUs">
+							<div class="contactMain">
+								<p>如果您有任何疑问与建议，敬请联系</p>
+								<button class="contactBtn" type="button">联系MK在线时尚顾问</button>
+								<span class="OR">OR</span>
+								<hr />
+								<div class="contactWechat clearfix">
+									<div class="fl innerTextBox">
+										<p class="youCan">您也可以</p>
+										<i class="fl"><img src="img/icon/icon-wechatscan.png"></i>
+										<div class="fr innerText">
+											<p>MICHAEL KORS</p>
+											<p>官方微信号</p>
+											<p>联系在线时尚顾问</p>
+										</div>
+									</div>
+									<span class="fr wechatPic"><img src="img/icon/icon-wechat.jpg"></span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!--搜索栏-->
+				<form class="navbar-form navbar-right searchBox">
+					<div class="form-group form-group-sm">
+						<div class="input-group">
+							<input class="form-control searchInput" id="searchInput" type="text" placeholder="搜索">
+							<a href="#" class="glyphicon glyphicon-search search-icon"></a>
+						</div>
+					</div>
+				</form>
+				<!--登录注册购物袋-->
+				<ul class="nav navbar-nav navbar-right rightPart" id="rightPart">
+					<li class="nav-login"><a href="#"><span class="glyphicon glyphicon-user"></span>登录</a>
+						<div class="Line"></div>
+						<!--登录hover下拉框-->
+						<div class="loginDiv">
+							<p><a>登录</a></p>
+							<form>
+								<label>手机号码</label><br />
+								<input type="text" placeholder="请输入您的手机号码" />
+								<h5>请输入您的手机号码</h5>
+								<br />
+								<label>密码</label><br />
+								<input type="password" placeholder="请输入密码" />
+								<h5>请输入您的密码</h5>
+								<br />
+								<span>
+									<input name="checkbox" type="checkbox" value="checkbox" checked="checked"></input>记住我
+									<label><a>忘记密码?</a></label>
+								</span>
+								<button>登录</button><br />
+								<label>还不是会员?</label><br />
+								<a href="register.html"><button>立即注册</button></a>
+							</form>
+						</div>
+					</li>
+					<li class="cut-off">丨</li>
+					<li class="nav-register"><a href="register.html"></span>注册</a></li>
+					<li class="nav-shopbag"><a href="#"><span class="Icon shopbagIcon"></span>购物袋</a>
+						<!--购物袋的下拉框-->
+						<div class="bagDiv">
+							<h1>购物袋</h1>
+							<p>您的购物袋里有<span>0</span>件商品</p>
+							<button>查看购物袋</button>
+						</div>
+					</li>
+				</ul>
+				<!--中间品牌名称--大的-->
+				<span class="brandHeader">
+					<h1 class="brandName"><a href="#">MICHAEL KORS</a></h1>
+				</span>
+				<!--小的-->
+				<span class="brandSmallHeader">
+					<h1 class="brandSmallName"><a href="#">MICHAEL KORS</a></h1>
+				</span>
+				<!--下面的导航条 真正的导航条-->
+				<div class="navTwo">
+					<ul class="navTwoul">
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">WOMEN 丨 女士</a>
+							<div class="hoverLine"></div>
+							<!--女士导航下拉项-->
+							<div class="womenDropList">
+								<div class="womenContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="second.html">新品上市</a></p>
+											<p><a href="">甜美海蓝</a></p>
+											<p><a href="">MERCER 系列手袋</a></p>
+											<p><a href="">CUSTOM KORS 定制系列</a></p>
+											<p><a href="">KORS STYLE 单品推荐</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">服饰</a></p>
+											<p><a href="">手袋</a></p>
+											<p><a href="">鞋膜</a></p>
+											<p><a href="">腕表</a></p>
+										</li>
+										<li><a href="">配饰</a>
+											<p><a href="">MICHAEL KORS COLLECTION</a></p>
+											
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav1.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">MEN 丨 男士</a>
+							<div class="hoverLine"></div>
+							<!--男士导航下拉项-->
+							<div class="womenDropList shoe">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="">新品上市</a></p>
+											<p><a href="">星座钱夹</a></p>
+											<p><a href="">POLO 休闲T恤系列</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">手袋</a></p>
+											<p><a href="">配饰</a></p>
+											<p><a href="">服饰</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav2.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">手袋</a>
+							<div class="hoverLine"></div>
+							<!--手袋导航下拉项-->
+							<div class="womenDropList">
+								<div class="womenContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="">丝巾组合</a></p>
+											<p><a href="">MERCER 系列手袋</a></p>
+											<p><a href="">SCOUT 相机包系列</a></p>
+											<p><a href="">CUSTOM KORS 定制系列</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">托特包</a></p>
+											<p><a href="">手提包</a></p>
+											<p><a href="">单肩包</a></p>
+											<p><a href="">双肩背包</a></p>
+										</li>
+										<li style="padding-top: 2%;">
+											<p><a href="">斜挎包</a></p>
+											<p><a href="">钱夹</a></p>
+											<p><a href="">小皮件</a></p>
+											<p><a href="">MICHAEL KORS COLLECTION</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav3.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">鞋履</a>
+							<div class="hoverLine"></div>
+							<!--鞋履导航下拉项-->
+							<div class="womenDropList shoe">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="">POPPY 运动鞋履系列</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">运动鞋</a></p>
+											<p><a href="">平底鞋</a></p>
+											<p><a href="">高跟鞋</a></p>
+											<p><a href="">凉鞋</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav4.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">配饰</a>
+							<div class="hoverLine"></div>
+							<!--配饰导航下拉项-->
+							<div class="womenDropList shoe">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="">甜美小物</a></p>
+											<p><a href="">缤纷挂件</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">香氛</a></p>
+											<p><a href="">钱夹</a></p>
+											<p><a href="">小皮件</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav5.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">腕表</a>
+							<div class="hoverLine"></div>
+							<!--腕表导航下拉项-->
+							<div class="womenDropList sale">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">女士腕表</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav6.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">礼品</a>
+							<div class="hoverLine"></div>
+							<!--礼品导航下拉项-->
+							<div class="womenDropList sale">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">女士礼品</a></p>
+											<p><a href="">男士礼品</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav7.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">SALE 丨 优惠</a>
+							<div class="hoverLine"></div>
+							<!--优惠导航下拉项-->
+							<div class="womenDropList sale">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">女士</a></p>
+											<p><a href="">男士</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav8.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="fourth.html" style="color: #AC8E4C;style="padding: 0 7% 12px;">DESTINATION KORS</a>
+							<div class="hoverLine" style="border-top: 3px #AC8E4C solid;width: 0px;"></div>
+							<!--destination导航下拉项-->
+							<div class="destination">
+								<div class="destinationText">
+									<p><a href="">JET SET</a></p>
+									<p><a href="">MICHAEL的挚爱</a></p>
+									<p><a href="">秀场</a></p>
+									<p><a href="">KORS CARES</a></p>
+								</div>
+							</div>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--小的导航条-->
+		<div class="smallNav clearfix">
+			<div class="leftList fl">
+				<a><span class="Icon navIcon"></span></a>
+			</div>
+			<div class="rightList fr">
+				<span class="Icon searchIcon"></span>
+				<span class="Icon shopbagIcon"></span>
+			</div>	
+			<div class="logoNav">
+				<a href="#"><img src="img/banner/logo.png"></a>
+			</div>
+		</div>
+		
+		<!--侧边的导航-->
+		<div class="smallNavWrap">
+			<div class="smallBgBlack"></div>
+			<div class="smallNavList">
+				<ul>
+					<li><a href="second.html">WOMEN 丨 女士</a></li>
+					<li><a href="#">MEN 丨 男士</a></li>
+					<li><a href="#">手袋</a></li>
+					<li><a href="#">鞋履</a></li>
+					<li><a href="#">配饰</a></li>
+					<li><a href="#">腕表</a></li>
+					<li><a href="#">礼品</a></li>
+					<li><a href="#">SALE 丨 优惠</a></li>
+					<li><a href="fourth.html">DESTINATION KORS</a></li>
+				</ul>
+				<p><a href=""><span class="glyphicon glyphicon-user"></span>登录</a>丨<a href="register.html"></span>注册</a></p>
+				<p><a href=""><span class="glyphicon glyphicon-map-marker"></span>精品店指南</a></p>
+				<p><a href=""><span class="Icon earphoneIcon"></span>联系我们</a></p>
+			</div>
+		</div>
+
+		
+		<!--banner 轮播-->
+		<div class="bannerWrap">
+			<div class="bigBannerPic">
+				<img src="img/banner/banner1.jpg" width="100%" />
+				<img src="img/banner/banner1-2.jpg" width="100%" />
+				<div class="centerText">
+					<h1>夏季酬宾</h1>
+					<h2>精选商品低至五折</h2>
+					<div class="clearfix"><a href="second.html">即刻选购女士系列<i class="rightT"></i></a>
+						<a>即刻选购男士系列<i class="rightT"></i></span></a>
+					</div>
+					<h4>*折扣优惠仅限指定商品</h4>
+				</div>
+			</div>
+			<div class="bigBannerVideo">
+				<a class="smallVideo">
+					<img class="playBtn" src="img/banner/video-playBtn.png" width="20%">
+					<video src="img/banner/index-video-small.mp4" autoplay="autoplay" loop="loop" width="100%"></video>				
+				</a>
+				<video class="LongVideo" id="LongVideo" src="img/banner/index-video-lang.mp4" controls="controls" loop="loop"></video>			
+			</div>
+			<div class="bigBannerChangePic">
+				<img src="img/banner/banner2.jpg" width="100%"/>
+			</div>
+		</div>
+		
+		<!--广告内容 甜美海蓝-->
+		<div class="sweetWrap">
+			<div class="textMain">
+				<h1><a id="sweetNautical">SWEET NAUTICAL</a></h1>
+				<h2><a>甜美海蓝</a></h2>
+				<h3><a>蓝色的拼接组合，诠释夏日浪漫航海风情，打造新季 MERCER 系列手袋。 </a></h3>
+				<h4><a href="#">即刻选购MERCER系列手袋 <i class="rightT"></i></a></h4>
+				<h4><a href="#">即刻选购全部手袋 <i class="rightT"></i></a></h4>
+			</div>
+		</div>
+		
+		<!--单品推荐 连衣裙系列-->
+		<div class="dressWrap clearfix">
+			<div class="dressContent clearfix">
+				<div class="dressPic">
+					<img src="img/modelpic/mod1-1.jpg" width="100%">
+				</div>
+				<div class="dressText">
+					<h1>单品推荐</h1>
+					<img src="img/modelpic/mod1-text.png" />
+					<p>轻盈的海风引动飘逸的裙边，尽现浪漫航海风情。</p>
+					<p>为您倾情奉上夏日新季造型推荐。 </p>
+					<span style="width: 100px;display: inline-block;color: black;height: 5px;border-bottom: 1px solid black;"></span>
+					<h4><a href="#">即将浏览并选购夏日造型推荐<i class="rightT"></i></a></h4>
+					<h4><a href="third.html">即刻选购连衣裙系列 <i class="rightT"></i></a></h4>
+				</div>
+			</div>
+		</div>
+		
+		<div class="commonWidth">
+			<!--模特gif-->
+			<div class="modelWrap">
+				<img src="img/modelpic/mod2.gif" width="100%"/>
+			</div>
+		
+			<!--广告内容 点睛之笔-->
+			<div class="sweetWrap">
+				<div class="textMain">
+					<h2><a>点“睛”之选</a></h2>
+					<h3><a>盈动的丝巾搭配手袋，唤醒无限创意。  </a></h3>
+					<span style="width: 100px;display: inline-block;color: black;height: 5px;margin-bottom:10px;border-bottom: 1px solid black;"></span>
+					<h4><a href="#">即刻选购 CUSTOM KORS 定制系列 <i class="rightT"></i></span></a></h4>
+					<h4><a href="#">即刻选购丝巾组合 <i class="rightT"></i></a></h4>
+				</div>
+			</div>
+			
+			<!--腕间珍藏-->
+			<div class="dressWrap watchWrap clearfix">
+				<div class="watchContent clearfix">
+					<div class="watchPic">
+						<img src="img/modelpic/mod3.jpg">
+					</div>
+					<div class="fr dressText watchText">
+						<h1>腕间典藏</h1>
+						<p>凝结时间，珍藏经典</p>
+						<span style="width: 100%;display: inline-block;color: black;height: 5px;border-bottom: 1px solid black;"></span>
+						<h4><a href="#">即刻选购腕表系列 <i class="rightT"></i></a></h4>
+					</div>
+				</div>
+			</div>
+				
+			<!--凉鞋上脚图-->
+			<div class="modelWrap shoeWrap">
+				<img src="img/modelpic/mod4.jpg"  width="100%"/>
+			</div>
+			
+			<!--跃然足上-->
+			<div class="sweetWrap shoeTextWrap">
+				<div class="textMain">
+					<h2><a>跃然足上</a></h2>
+					<h3><a>百变鞋履，释放足尖的愉悦与律动。  </a></h3>
+					<span style="width: 100px;display: inline-block;color: black;height: 5px;margin-bottom:10px;border-bottom: 1px solid black;"></span>
+					<h4><a href="#">即刻选购鞋履系列 <i class="rightT"></i></a></h4>
+				</div>
+			</div>
+				
+			<!--经典POLO-->
+			<div class="dressWrap poloWrap clearfix">
+				<div class="poloContent clearfix">
+					<div class="fl poloPic">
+						<img src="img/modelpic/mod5.jpg" width="100%">
+					</div>
+					<div class="fr dressText poloText">
+						<h1>经典POLO</h1>
+						<p>简洁、舒适、沉稳<br>的男士POLO衫，<br>是出行的时尚单品。</p>
+						<span style="width: 100px;display: inline-block;color: black;height: 5px;border-bottom: 1px solid black;"></span>
+						<h4><a href="#">即刻选购POLO衫 <i class="rightT"></i></a></h4>
+					</div>
+				</div>	
+			</div>
+		</div>
+		
+		<!--分割线-->
+		<div class="partLine">
+			<img src="img/modelpic/partLine.jpg" width="100%"/>
+		</div>
+		
+		<div class="commonWidth">
+			<!--美女图-->
+			<div class="beauty">
+				<img src="img/modelpic/mod6.jpg" width="100%">
+			</div>
+			<!--夏季系列-->
+			<div class="sweetWrap summerWrap">
+				<div class="textMain">
+					<h1><a id="transeason">TRANSEASON 2017</a></h1>
+					<h2><a>2017夏季系列</a></h2>
+					<h3><a>生动的花纹，精致的剪裁，金属的质感。</a></h3>
+					<h3><a>MICHAEL KORS COLLECTION 为您带来整整一季的浪漫魅力。</a></h3>
+					<h4><a href="#">即刻选购 <i class="rightT"></i></a></h4>
+				</div>
+			</div>
+			<!--分割线-->
+			<div class="desLine">
+				<span></span>
+				<span class="desText">DESTINATION KORS</span>
+			</div>
+		</div>
+		
+		<!--系列商品-->
+		<div class="seriesWrap clearfix">
+			<div class="fl MIASeries">
+				<a href="#"><img src="img/modelpic/mod7.jpg" width="100%"></a>
+				<h1>MIA 系列手袋</h1>
+				<p><a href="#">浏览专题<i class="rightT"></i></a></p>
+			</div>
+				<div class="fl fallSeries">
+					<a href="#"><img src="img/modelpic/mod8.jpg" width="100%"></a>
+					<h1>2017 秋季系列</h1>
+					<p><a href="#">浏览专题<i class="rightT"></i></a></p>
+				</div>
+				<div class="fl summerSeries">
+					<a href="#"><img src="img/modelpic/mod9.jpg" width="100%"></a>
+					<h1>2017 夏季系列</h1>
+					<p><a href="#">浏览专题<i class="rightT"></i></a></p>
+				</div>
+		</div>
+	
+		<!--尾部-->
+		<footer class="clearfix">
+			<div class="foLeftPart fl">
+				<span class="guide"><a href="#"><span class="glyphicon glyphicon-map-marker"></span> 精品店指南</a></span>
+				<p>从 MICHAEL KORS 订阅最新资讯</p>
+				<div class="inputBtn">
+					<input type="text" class="inputEmail"  placeholder="请输入您的电子邮箱..."  onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的电子邮箱...'"/>
+					<span class="inputAddBtn"><button class="btnRead" type="button">订阅</button></span>
+				</div>
+				<div class="lastLineIcon clearfix">
+					<ul>
+						<li><a href=""><span class="Icon weiboIcon"></span></a></li>
+						<li class="wechat"><a href=""><span class="Icon wechatIcon"></span></a></li>
+						<li><a href=""><span class="Icon youtubeIcon"></span></a></li>
+						<li class="tel"><a href=""><span class="Icon telIcon"></span>400-103-8882(周一至周日:早9点至晚10点)
+</a></li>
+						<li class="earphone"><a href=""><span class="Icon earphoneIcon"></span>在线时尚顾问｜ 微信时尚顾问</a></li>			
+					</ul>
+				</div>
+			</div>
+			<div class="foAboutUs fl">
+				<span class="us"><a>关于我们<span class="glyphicon glyphicon-plus fr"></span></a></span>
+				<p><a href="">KORS CARES</a></p>
+			</div>
+			<div class="foMyCount fl">
+				<span class="us"><a>我的账户<span class="glyphicon glyphicon-plus fr"></span></a></span>
+				<p><a href="register.html">注册</a></p>
+				<p><a href="">账户首页</a></p>
+				<p><a href="">个人资料</a></p>
+				<p><a href="">地址簿</a></p>
+				<p><a href="">我的订单</a></p>
+				<p><a href="">我的心愿单</a></p>
+				<p><a href="">隐私条款</a></p>
+			</div>
+			<div class="foCusService fl">
+				<span class="us"><a>客户服务<span class="glyphicon glyphicon-plus fr"></span></a></span>
+				<p><a href="">FAQ</a></p>
+				<p><a href="">订单查询</a></p>
+				<p><a href="">退换货政策</a></p>
+				<p><a href="">质量保证和维修</a></p>
+				<p><a href="">会员权益</a></p>
+			</div>
+		</footer>
+		<div class="lastPart">
+			<p><a><span class="Icon policeIcon"></span>沪公网安备31010602000358号 | 沪ICP备13005807 | © 2017 MICHAEL KORS</a><a>隐私条款</a></p>
+			<p><a><span class="Icon policeIcon"></span>沪公网安备31010602000358号 <br> 沪ICP备13005807 <br> © 2017 MICHAEL KORS</a><br><br><a>隐私条款</a></p>
+		</div>	
+	</body>
+</html>

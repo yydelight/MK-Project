@@ -1,0 +1,813 @@
+/*一键上天*/
+.topTop{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	text-align: center;
+	z-index: 999;
+	display: none;
+}
+.topTop a{
+	border-radius: 50%;
+	border: 1px solid #E1E1E1;
+	background: #E1E1E1;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	line-height: 50px;
+}
+/*头部黑色条-tips*/
+.headerTopTips,.headerTopTipsPlus{
+	background: black;
+	color: #DEDEDE;
+	text-align: center;
+	width: 100%;
+	font-size: 12px;
+	padding: 12px;
+}
+.headerTopTipsPlus{
+	padding: 34px 24px 14px;
+}
+.headerTopTips a,.headerTopTipsPlus a{
+	color: white;
+	text-decoration: underline;
+	font-size: 12px;
+	padding-left: 2px;
+}
+.plusIcon,.closeIcon{
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+.headerTopTipsPlus p{
+	padding-bottom: 5px;
+}
+/*头部黑色条点击后*/
+.headerTopTipsPlus{
+	display: none;
+	position: relative;
+	margin-top: -39px;
+}
+/*导航条*/
+.navbar{
+	margin-bottom:7px ;
+}
+.navbar-default{
+	font-size:12px;
+	color: #010101;
+	background-color: white;
+}
+.leftPart li{
+	padding-right: 10px;
+}
+/*登录注册购物袋*/
+#rightPart{
+	position: relative;
+    margin-right: 165px;
+}
+.cut-off{
+	position: relative;
+	top: 19px;
+}
+.navbar-nav .glyphicon{
+	font-size:14px;
+	padding-right: 10px;
+	color: #000000;
+}
+.navbar-default .nav .nav-guide a,.navbar-default .nav .nav-contact a{
+	padding:14px 5px;
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.Icon{
+	background-size: 100% 100%;
+	background-position: 0 0;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	top: -2px;
+	margin-right: 7px;
+}
+.shopbagIcon{
+	width: 16px;
+	height: 20px;
+	background-image: url(../img/icon/icon-bag.png);
+}
+.earphoneIcon{
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/icon/icon-earphone.png);
+}
+.Line{
+	border-bottom: 1px solid black;
+	width: 0px;
+	position: absolute;
+	left: 26px;
+	top: 33px;
+}
+/*登录hover下拉框*/
+.loginDiv{
+	position: absolute;
+	top: 80%;
+	right: -95px;
+	background: white;
+	width: 318px;
+	box-shadow: 0 0 3px #000;
+	display: none;
+	z-index: 2;
+	padding: 20px 35px;
+}
+.loginDiv p{
+	padding-bottom: 27px;
+}
+.loginDiv p a{
+	font-size: 24px;
+}
+.loginDiv label{
+	font-size: 13px;
+	margin-bottom: 7px;
+}
+.loginDiv form input{
+	margin-bottom: 14px;
+	height: 30px;
+	padding-left: 15px;
+	width: 100%;
+	border: 1px solid #CCCCCC;
+}
+.loginDiv form h5{
+	font-size: 12px;
+	color: red;
+	display: none;
+}
+.loginDiv form span{
+	display: block;
+}
+.loginDiv form span input{
+	margin-right: 5px;
+	margin-bottom: 0px;
+	height: 7px;
+	padding-left: 0px;
+	width: 5px;
+	text-align: center;
+	display: inline-block;
+}
+.loginDiv form span label{
+	float: right;
+	margin-top: 5px;
+}
+.loginDiv form span label a{
+	color: #999;
+	text-decoration: underline;
+}
+.loginDiv form button{
+	margin: 13px 0 28px 0;
+	width: 100%;
+	height: 40px;
+	background: black;
+	color: white;
+	border: 1px solid black;
+}
+.loginDiv form button:last-child{
+	background: white;
+	color: black;
+}
+.loginDiv form button:last-child:hover{
+	background: black;
+	color: white;
+}
+/*购物袋的下拉框*/
+.bagDiv{
+	position: absolute;
+	top: 43px;
+	width: 412px;
+	padding: 40px;
+	right: 0px;
+	background: white;
+	z-index: 1000;
+	box-shadow: 0 0 5px #ccc;
+	display: none;
+}
+.bagDiv h1{
+	font-size: 24px;
+	margin-bottom: 25px;
+	color: #666;
+}
+.bagDiv p{
+	font-size: 16px;
+	color: #000;
+}
+.bagDiv button{
+	width: 100%;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	margin-top: 35px;
+	height: 40px;
+	background: white;
+	color: black;
+	border: 1px solid black;
+}
+.bagDiv button:hover{
+	background: black;
+	color: white;
+}
+/*搜索栏*/
+#searchInput{
+	width: 160px;
+}
+.navbar-form{
+	padding: 2px 0;
+}
+.searchBox{
+	/*z-index: 4;*/
+	position: absolute;
+	right: 17px;
+}
+.search-icon{
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	text-decoration: none;
+	color: #000000;	
+	z-index: 5;
+}
+.search-icon:hover{
+	color: #000000;
+	text-decoration: none;
+}
+/*中间的品牌名称*/
+.brandHeader{
+	display: block;
+	/*margin: 3% 37%;*/
+	width: 100%;
+	margin: 3% auto;
+	text-align: center;
+}
+.brandName{
+	font-size: 32px;
+	font-weight: bold;
+	min-width: 303px;
+}
+.brandName a{
+	text-decoration: none;
+	color: black;
+}
+.brandSmallHeader{
+	width: 100%;
+	display: none;
+	/*margin: 1% 41% 2%;*/
+	margin: 1% auto;
+	text-align: center;
+	margin-bottom: 2%;
+}
+.brandSmallName{
+	font-size: 22px;
+	font-weight: bold;
+}
+.brandSmallName a{
+	text-decoration: none;
+	color: black;
+}
+/*真正的导航条*/
+#fixNav{
+	display: block;
+}
+.navTwo{
+	padding-bottom: 1%;
+	text-align: center;
+}
+.navTwoul {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.navTwoul li{
+	display: inline-block;
+	margin-right: 30px;
+}
+.navTwoul li a{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.womenDropList{
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	left: 0;
+	padding: 28px 5%;
+	z-index: 22;
+	display: none;
+}
+.womenContent ul li{
+	text-align: left;
+	font-size: 12px;
+	padding: 0 7% 0 3%;
+	vertical-align: top;
+}
+.womenContent ul li:last-child{
+	max-width: 22%;
+	padding: 0 3% 0 0;	
+}
+.womenContent ul li a{
+	color: #707070;
+	margin-bottom: 12px;
+	font-weight: normal;
+}
+.womenContent ul li p a{
+	color: black;
+	font-weight: normal;
+}
+.womenContent img{
+	cursor: pointer;
+}
+.womenContent ul li p a:hover{
+	color: #BCBCBC;
+}
+.smallNav,.smallNavWrap{
+	display: none;
+}
+.shoe div ul li{
+	padding: 0 14% 0 3%;
+}
+.sale div ul li{
+	padding: 0 36% 0 3%;
+}
+/*hover时出现下划线*/
+.hoverLine{
+	border-top: 3px black solid;
+	position: absolute;
+	width: 0px;
+	top: 34px;
+	z-index: 100;
+}
+/*destination导航项hover*/
+.destination{
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	padding-top: 28px;
+	z-index: 22;
+	display: none;
+}
+.destinationText{
+	background-color: black;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+.destinationText p{
+	width: 24%;
+	display: inline-block;
+}
+.destination p a{
+	color: white;
+	font-size: 12px;
+	border-right: 1px solid #D6D6D6;
+}
+.destination p:last-child a{
+	border-right: none;
+}
+/*联系我们弹出框*/
+.contactUs{
+	position: absolute;
+	top: 76%;
+	left: 2%;
+	background: white;
+	width: 330px;
+	box-shadow: 0 0 3px #000;
+	display: none;
+	z-index: 2;
+}
+.contactMain{
+	padding: 7%;
+}
+.contactMain p{
+	font-size: 14px;
+}
+.contactBtn{
+	width: 100%;
+	height: 40px;
+	background: black;
+	border: 1px black solid;
+	color: white;
+	margin-top: 9%;
+}
+.OR{
+    width: 50px;
+    height: 21px;
+    background: white;
+    color: black;
+    position: absolute;
+    top: 113px;
+    left: 120px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 21px;
+}
+.innerTextBox{
+	width: 137px;
+}
+.youCan{
+	padding-bottom: 10%;
+}
+.innerText p{
+	font-size: 12px;
+	padding-bottom: 8%;
+}
+
+/*尾部*/
+footer{
+	width: 98%;
+	margin: 0 auto;
+	padding-bottom: 5%;
+	border-top: 1px solid #d6d6d6;
+	padding-top: 2%;
+}
+.foLeftPart{
+	width: 50%;
+	color: #000000;
+	letter-spacing: 1px;
+
+}
+.guide{
+	display: block;
+	margin: 2% 0;
+	font-size: 20px;
+	font-weight: normal;
+}
+.foLeftPart p{
+	margin: 10% 0 3%;
+	font-size: 20px;
+}
+/*电子邮箱输入*/
+.inputBtn{
+	width: 100%;
+	padding-bottom: 8%;
+	overflow: hidden;
+}
+.inputEmail{
+	width: 66%;
+	font-size: 12px;
+    padding:9px 12px;
+	border: 1px solid #d6d6d6;
+	color: #707070;
+}
+.inputAddBtn{
+    width: 13%;
+    height: 100%;
+    margin-left: -2%;
+    padding: 7px 0;
+    background: #000;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #000;
+}
+.btnRead{
+    background: black;
+    color: white;
+    border: none;
+    padding: 2px 4%;
+    font-size: 12px;
+}
+.inputEmail:focus{
+	outline-color: #000000;
+	border-color: #000000;
+}
+/*尾部左下角图标*/
+.lastLineIcon{
+
+}
+.lastLineIcon ul li{
+	float:left;
+	padding-right: 4%;
+}
+.lastLineIcon ul li:last-child{
+	padding-right: 0;
+}
+.lastLineIcon ul li a{
+	font-size: 12px;
+}
+.weiboIcon{
+	width: 18px;
+	height: 20px;
+	background-image: url(../img/icon/weibo.png);
+}
+.wechatIcon{
+	width: 18px;
+	height: 20px;
+	background-image: url(../img/icon/微信.png);
+}
+.telIcon{
+	width: 18px;
+	height: 20px;
+	background-image: url(../img/icon/tel.png);
+}
+.youtubeIcon{
+	width: 18px;
+	height: 20px;
+	background-image: url(../img/icon/wf_优酷.png);
+}
+/*关于我们*/
+.foAboutUs,.foMyCount,.foCusService{
+	width: 16%;
+}
+.us{
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	display: block;
+	margin-top: 12%;
+}
+.us span{
+	display: none;
+}
+.foAboutUs p,.foMyCount p,.foCusService p{
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-top: 11%;
+}
+/*最后一行*/
+.lastPart{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	line-height: 10px;
+	padding: 2% 0;
+	border-top: 1px solid #d6d6d6;
+}
+.lastPart p:last-child{
+	display: none;
+}
+.lastPart a:first-child{
+	padding-right: 31px;
+}
+.lastPart a{
+	color: #707070;
+}
+.policeIcon{
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/icon/police-icon.png);
+}
+/*小三角形*/
+.rightT{
+	margin-left: 6px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 5px solid #000;
+	border-bottom: 5px solid transparent;
+}
+
+/*第三页的部分*/
+.pageThree{
+	position: relative;
+}
+section{
+	margin: 0 2%;
+	font-size: 12px;
+	line-height: 29px;
+	border-bottom: 2px solid #bcbcbc;
+	padding-left: 2%;
+}
+/*固定的小圆点*/
+.ptrCircleDot{
+	display: inline-block;
+	position: fixed;
+	left: 119px;
+	top: 48%;
+}
+.ptrCircleDot ul{
+	list-style: circle;
+	list-style-position: inside;
+}
+.ptrCircleDot ul li{
+	padding-bottom: 365%;
+}
+/*改变bootstrap原本样式*/
+.ptrCircleDot > .nav > li > a {
+    padding: 4px 4px;
+}
+.ptrCircleDot > .nav-tabs > li > a {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.ptrCircleDot > .nav-tabs > li.active > a,.ptrCircleDot > .nav-tabs > li.active > a:hover,.ptrCircleDot > .nav-tabs > li.active > a:focus {
+    border: 1px solid black;
+    border-bottom-color: black;
+    background: black;
+}
+/*小圆点hover*/
+.ptrCircleDot ul li a img{
+	position: absolute;
+	width: 60px;
+	height: auto;
+	left: -65px;
+	top: -38px;
+	display: none;
+}
+.ptrCircleDot ul li:hover a>img{
+	display: block;
+}
+/*模特图*/
+/*大图展示*/
+.ptrImgBigPic{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 2%;
+	z-index: 1000;
+	background: white;
+	overflow-y: scroll;
+	display: none;
+}
+.ptrImgBigPic img{
+	width: 100%;
+	margin-bottom: 2%;
+}
+.ptrImgBigPic img:hover{
+	cursor: url("../img/icon/小放大.ico"),-moz-zoom-out;
+}
+.ptrModelPic{
+	width: 40%;
+	margin-left: 12%;
+	margin-top: 2%;
+	float: left;
+}
+.ptrModelPic img{
+	width: 100%;
+	padding-bottom: 1%;
+}
+.ptrModelPic img:hover{
+	cursor: url("../img/icon/放大.ico"),-moz-zoom-out;
+}
+/*右边物品详情*/
+.ptrGoodsDetails{
+	margin-top: 2%;
+	float: left;
+	width: 30%;
+	margin-left: 8%;
+}
+.ptrGoodsDetails h6,.ptrGoodsDetails h5,.ptrGoodsDetails h4{
+	font-size: 12px;
+	padding-bottom: 3%;
+	letter-spacing: 2px;
+}
+.ptrGoodsDetails h1{
+	font-size: 18px;
+	padding-bottom: 3%;
+}
+.ptrGoodsDetails p{
+	padding-bottom: 5%;
+}
+.ptrGoodsDetails p a{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	padding: 4px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.ptrGoodsDetails p a img{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+.ptrSize{
+	padding-bottom: 3%;
+}
+.ptrSize ul li{
+	display: inline-block;
+	margin: 2px 1px;
+}
+.ptrSize ul li a{
+	display: inline-block;
+	padding: 14px 8px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	text-align: center;
+	background: white;
+	width: 42px;
+	height: 42px;	
+}
+.ptrGoodsDetails select{
+	height: 40px;
+	width: 100px;
+}
+.ptrGoodsDetails button{
+	margin: 13px 0 28px 0;
+	width: 48%;
+	height: 40px;
+	background: black;
+	color: white;
+	border: 1px solid black;
+	float: left;
+	display: inline-block;
+}
+.ptrGoodsDetails button:nth-child(1){
+	margin-right: 1%;
+}
+.ptrGoodsDetails .ptrBuy{
+	background: white;
+	color: black;
+}
+.ptrGoodsDetails .ptrBuy:hover{
+	background: black;
+	color: white;
+}
+.heartIcon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon/心.png);
+    vertical-align: top;
+    border-right: none;
+}
+.ptrMore{
+	clear: both;
+	padding-bottom: 3%;
+}
+.ptrMore span{
+	font-size: 12px;	
+}
+dl dt{
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 4% 0;
+	color: black;
+}
+dl dd{
+	font-size: 12px;
+	line-height: 24px;
+	color: black;
+}
+/*猜你喜欢*/
+.ptrGuess{
+	font-size: 22px;
+	width: 97%;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-top: 6%;
+	overflow: hidden;
+	margin-bottom: 5%;
+	margin-left: 3%;
+}
+.ptImgList{
+	margin-top: 2%;
+}
+.ptImgul{
+	width: 100%;
+	overflow: hidden;
+}
+.ptImgul li{
+	width: 25%;
+	float: left;
+	padding-right: 3%;
+	position: relative;
+}
+.ptImgul li h3,.ptImgul li h4,.ptImgul li h5{
+	text-align: left;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.ptImgul li h3{
+	font-weight: bold;
+}
+.ptImgul li h5{
+	margin: 4% 0;
+}
+.ptImgul li a span {
+    height: 28px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-top: -28px;
+    width: 88%;
+    line-height: 28px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: none;
+}
+.ptImgul li a span:hover{
+	background-color: black;
+	color: white;
+}
+.ptImgul li a i,.ptColorChoice{
+	display: none;
+}
+/*小图轮播*/
+#myCarousel{
+	display: none;
+}

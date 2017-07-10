@@ -1,0 +1,599 @@
+/*screen and (min-device-width:300px) and (max-device-width:1024px)*/
+/*导航条*/
+@charset "utf-8";
+.topTop a{
+	border-radius: 0;
+}
+.topTop .glyphicon{
+	top: -7px;
+	color: #999;
+}
+.topTop a span{
+	display: block!important;
+	margin: -41px 0;
+	color: #999;
+	font-size: 11px;
+}
+
+/*小导航*/
+#fixNav{
+	display: none;
+}
+.smallNav{
+	width: 100%;
+	display: block;
+	position: relative;
+	background-color: white;
+	z-index: 1000;
+	border-bottom: 1px solid #BCBCBC;
+}
+.logoNav{
+	text-align: center;
+	padding: 18px 0;
+}
+.smallNav a img{
+	width: 130px;
+	text-align: center;
+}
+.leftList{
+	padding: 20px 11px;
+}
+.rightList{
+	margin: 20px 20px;
+}
+.navIcon{
+	width: 16px;
+	height: 13px;
+	background-image: url(../img/icon/导航.png);
+	cursor: pointer;
+}
+.closeIcon{
+	width: 13px;
+	height: 13px;
+	background-image: url(../img/icon/关闭.png);
+	z-index: 10;
+	left:2px;
+}
+.shopbagIcon{
+	width: 15px;
+	height: 17px;
+}
+.searchIcon{
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/icon/search.png);
+	margin-right: 12px;
+}
+/*点击后出现导航*/
+.smallNavWrap{
+    position: absolute;
+    top: 93px;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    border-top: 2px solid #d6d6d6;
+    letter-spacing: 1px;
+    left: -100%;
+}
+@-webkit-keyframes changebg
+{
+   	0%{
+	  opacity:0;
+	}
+   	50%{
+	 opacity:.3; 
+	   }
+   	100%{
+	 opacity:.6;
+	}
+}
+.smallBgBlack{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: black;
+	opacity: 0;
+	height: 558px;
+	z-index: 1;
+	-webkit-animation:'changebg' 2s ease-in-out 0s 1 alternate forwards;
+}
+.smallNavList{
+    position: absolute;
+    width: 80%;
+    left: 0%;
+    background-color: white;    
+    padding-bottom: 8px;
+    z-index: 2;
+}
+.smallNavList ul li{
+	border-bottom: 1px solid #d6d6d6;
+	padding: 19px 12px 14px;	
+}
+.smallNavList p{
+	padding: 15px 12px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.smallNavList p span{
+	padding-right: 7px;
+	font-size: 14px;
+}
+.smallNavList ul li a{
+	font-family: "GothamBold";
+	font-size: 12px;
+	font-weight: bolder;
+	width: 100%;
+	display: block;
+	background-image: url(../img/icon/右.png);
+	background-repeat: no-repeat;
+	background-position: 100% -3px;
+}
+/*夏季酬宾的字体大小*/
+.centerText{
+	width: 100%;
+}
+.centerText h1{
+	font-size: 16px;
+}
+.centerText h2{
+	font-size: 28px;
+	letter-spacing: 4px;
+	padding-bottom: 2%;
+}
+.centerText div{
+	padding-left: 3%;
+	padding-bottom: 2%;
+}
+.centerText div a{
+	padding-right: 5%;	
+}
+/*脚部的响应式*/
+footer {
+    width: 100%;
+}
+.foLeftPart{
+	width: 98%;
+	margin: 0 2%;
+}
+.guide{
+    margin: 2% 0;
+    padding-bottom: 10px;
+	font-size: 14px;
+}
+.foLeftPart p{
+	margin: 4% 0 1%;
+	font-size: 14px;
+}
+.inputEmail{
+    padding::;px 12px;
+    width: 83%;
+}
+.inputBtn {
+    padding-bottom: 3%;
+}
+.lastLineIcon {
+    margin-bottom: 4%;
+}
+.wechat,.tel,.earphone{
+	display: none;
+}
+.foAboutUs{
+	border-top: 1px solid #BCBCBC;
+}
+.foAboutUs,.foMyCount,.foCusService{
+	width: 99%;
+	padding-top: 34px;
+}
+.us {
+	width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: -17px;
+    border-bottom: 1px solid #bcbcbc;
+    padding-bottom: 18px;
+	padding-left: 1%;
+	cursor: pointer;
+}
+.us a{
+	width: 100%;
+}
+.us span{
+	display: block;
+	padding-right: 10px;
+}
+.foAboutUs p,.foMyCount p,.foCusService p{
+	display: none;
+}
+.foAboutUs p, .foMyCount p, .foCusService p {
+    padding: 20px 1% 18px;
+    border-bottom: 1px solid #bcbcbc;
+}
+.lastPart{
+	border-top: none;
+	padding: 0;
+}
+.lastPart a:first-child{
+	padding-right: 0px;
+}
+.lastPart p:first-child{
+	display: none;
+}
+.lastPart p:last-child{
+	display: block;
+	padding-bottom: 20px;
+}
+#closeIcon{
+	width: 100%;
+	text-align: right;
+	padding-right: 7px;
+}
+.bigBannerVideo{
+	display: none;
+}
+.bigBannerChangePic{
+	display: block;
+	width: 100%;
+	margin-top: 1%;
+	position: relative;
+}
+
+/*第二页的css*/
+.ptLeftPart{
+	display: none;
+}
+.ptRightPart{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px){
+	img[src="img/banner/banner1.jpg"]{
+		display: none;
+	}
+	img[src="img/banner/banner1-2.jpg"]{
+		display: block;
+	}
+	.centerText h1 {
+	    padding-bottom: 6%;
+	}
+	.centerText h2 {
+	    padding-bottom: 8%;
+	}
+	.centerText div {
+	    padding-left: 5%;
+	    padding-bottom: 9%;
+	}
+	.centerText div a {
+	    padding-right: 8%;
+	}
+	.sweetWrap h1,.sweetWrap span,.sweetWrap h3,
+	.dressText span,.poloText p,.poloText span,
+	#transeason,.summerWrap h3,.desLine,
+	.seriesWrap,.watchText p,.partLine{
+		display: none !important;
+	}
+	.dressPic,.watchPic,.poloPic,.dressPic img,.watchPic img{
+		width: 100%;
+	}
+	.dressText{
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+	.dressText img{
+		width: 50%;
+	}
+	
+	/*第二页的内容*/
+	.pageTwo section,.ptNav{
+		display: none;
+	}
+	.ptImgul{
+		width: 100%;
+		overflow: hidden;
+	}
+	.ptImgul li{
+		width: 50%;
+	}
+	.ptImgList{
+		margin-left: 1%;
+	}
+	.ptRightPart h5{
+		text-align: center;
+		margin-bottom: 2%;
+		font-size: 18px;
+	}		
+	.ptSelectTitle{
+		text-align: center;
+		font-size: 12px;
+		line-height: 52px;
+		border: 1px solid black;
+		height: 52px;
+		margin-right: 3%;
+		margin-left: 1%;
+		cursor: pointer;
+		display: block;
+	}
+	.ptSelectTitle span{
+		padding: 0 2px;
+		font-size: 16px;
+		font-weight: bolder;
+		vertical-align: top;
+	}
+	.ptDownIcon{
+		width: 20px;
+	    height: 20px;
+	    background-image: url(../img/icon/下拉.png);
+	    vertical-align: top;
+	    border-right: none;
+	}
+	.ptSelectDrop .ptSortDiv{
+		display: block!important;
+	}
+	.ptSelectDrop{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		bottom: 0px;
+		background: white;
+		width: 100%;
+		text-align: left;
+		padding-left: 2%;
+		display: none;
+		z-index: 1000;
+		overflow-y: scroll;
+	}
+	.ptSelectDrop .ptSortTwo{
+		margin-top: 5%;
+	}
+	.ptSelectDrop .ptSortTwo h6{
+		font-size: 18px;
+		line-height: 18px;
+		margin-bottom: 2%;
+	}
+	.ptSelectDrop .ptSortTwo p{
+		line-height: 31px;
+	}
+	.ptSelectDrop .ptSelect h1{
+		font-size: 18px;
+		padding-bottom: 10px;
+		line-height: 37px;
+		margin-top: 13px;
+	}
+	.ptSelectDrop .ptSelect .ptSize,.ptSelectDrop .ptSelect .ptColor,.ptSelectDrop .ptSelect .ptPrice{
+		padding-top: 14px;
+	}
+	.ptSelectDrop .ptSelect .size{
+		font-size: 12px;
+	}
+	.ptSelectDrop .ptSelect .ptColor .size,.ptSelectDrop .ptSelect .ptPrice .size{
+		border-bottom: none;
+	}
+	.ptSelectDrop .ptSelect .size span{
+		font-size: 12px;
+		line-height: 50px;
+	}
+	.ptImgul li a span {
+		width: 94%;
+	}
+	.ptNewList{
+		text-align: left;
+		display: none;
+		margin-top: 2%;
+		padding-right: 3%;
+		padding-left: 1%;
+	}
+	.ptNewList .ptCategory span:first-child h1{
+		display: none;
+	}
+	.ptNewList .ptCategory{
+		border-top: 1px solid #CCCCCC;
+		border-bottom: 2px solid #ccc;
+		margin-bottom: 4%;
+		padding-bottom: 3%;
+	}
+	.ptNewList .ptCategory span:last-child h1{
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.ptNewList .ptCategory span:last-child p{
+		padding-left: 4%;
+	}
+	/*取消按钮和提交按钮*/
+	.ptFixBtn{
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		padding-bottom: 2%;
+		background: white;
+	}
+	.ptBtnCancel{
+		width: 47%;
+		height: 45px;
+		line-height: 45px;
+		background: white;
+		color: black;
+		border: 1px solid black;
+		margin-right: 1%;
+	}
+	.ptBtnCancel:hover{
+		background: black;
+		color: white;
+	}
+	.ptBtnSubmit{
+		width: 45%;
+		height: 45px;
+		line-height: 45px;		
+		background: #e1e1e1;
+		color: black;
+		border: 1px solid #e1e1e1;
+	}	
+	/*第二页内容结束*/
+	
+	/*第三页的内容*/
+
+	.ptrCircleDot{
+		display: none;
+	}
+	.ptrModelPic {
+		display: none;
+	}
+	.ptrBigPicIcon{
+		position: absolute;
+		right: 8px;
+		top: 7px;
+		height: 20px;
+		width: 20px;	
+		background-image: url(../img/icon/放大箭头.png);
+		cursor: pointer;
+	}
+	#Img1{
+		display: block;
+	}
+	#Img2,#Img3,#Img4,#Img5{
+		display: none;
+	}
+	.ptrGoodsDetails{
+		width: 100%;
+		position: relative !important;
+		overflow: hidden;
+		padding: 0 3%;
+		margin-left: 0;
+		left: 0!important;
+		top: 0!important;
+		bottom: 0!important;
+	}
+	.ptrGoodsDetails select{
+	    width: 100%;
+	    padding-left: 2%;
+	    margin-bottom: 2%;
+	}
+	.ptrGoodsDetails button {
+	    width: 100%;
+	}
+	.ptrMore {
+	    clear: both;
+	    padding-bottom: 3%;
+	    width: 100%;
+	    overflow: hidden;
+	}
+	.ptrGoodsDetails button {
+	    margin:0;
+	    margin-bottom: 2%;
+	}
+	/*第三页内容结束*/
+	
+	/*注册页内容开始*/
+	section{
+		background: white;
+	}
+	.regHeader span{
+		float: none;
+		position: absolute;
+		top: 655px;
+		left: 28px;
+	}
+	.registerDiv{
+		width: 100%;
+		padding: 0px 15px;
+		box-shadow: none;
+	}
+	.regInputGroup{
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 100%!important;
+		max-width: 100%;
+	}
+	.regInputGroup label{
+		text-align: left;
+		padding-left: 10px;
+	}
+	.regInputGroup input {
+	    line-height: 40px;
+	    font-size: 12px;
+	    padding-left: 12px;
+	    width: 100%;
+	    height: 40px;
+	}
+	.regInput h5{
+		margin-left: 0;
+	}
+	.regAdd{
+		width: 100%;
+	}
+	.regAdd div input {
+	    width: 85%;
+	    margin-left: -188px;
+	    margin-top: 5%;
+	}
+	.regAdd img, .regAdd button {
+	    position: absolute;
+	    width: 100px;
+	    height: 40px;
+	    right: 0;
+	    left: auto;
+	    top: 32px;
+	}
+	/*第四页开始*/
+	.ForTwoNav{
+		display: none;
+	}
+	.ForSmallNav{
+		display: block;
+		padding-left: 4%;
+		border-bottom: 2px solid #a78e56;		
+	}
+	.ForSmallNav i{
+		vertical-align: middle;
+	}
+	.ForSmallNav a{
+		font-size: 18px;
+		color: #a78e56;
+		line-height: 50px;
+		font-weight: bolder;
+		font-family: "GothamBold"!important;
+	}
+	.ForSNDropList{
+		position: absolute;
+		top: 147px;
+		left: 0%;
+		z-index: 10;
+		background: black;
+		color: white;
+		width: 100%;
+		padding-left: 17px;
+		display: none;
+	}
+	.ForSNDropList ul li a{
+		color: white;
+		font-size: 13px;
+		font-family: "GothamBold"!important;
+	}
+	/*第四页结束*/
+}
+
+@media screen and (min-width: 320px) and (max-width: 561px) {
+	.centerText div{
+		padding-left: 8%;
+	}
+	.centerText div a{
+		padding-right: 8%;
+	}
+	
+}
+
+
+.commonWidth {
+    width: 100%;
+    margin: 5% auto;
+}

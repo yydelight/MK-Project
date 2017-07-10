@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" charset="utf-8" />
+		<title>女士-新品上市</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<link rel="stylesheet" href="Bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/second.css"/>
+		<link media="screen and (max-width:1024px)" rel="stylesheet" type="text/css" href="css/smallIndex.css" />
+		<script type="text/javascript" src="Bootstrap/js/jquery-1.11.3.js" ></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="Bootstrap/js/bootstrap.js" ></script>
+		<style>
+			@font-face {
+				font-family:GothamBold; 
+				src: url("fonts/Gotham-Bold.otf");
+			}
+			@font-face {
+				font-family: caslonbi;
+				src: url("fonts/caslonbi.ttf");
+			}
+			@font-face {
+				font-family: GothamBook;
+				src: url("fonts/GothamRnd-Book.otf");
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--点击直接到顶部-->
+		<div class="topTop">
+			<a href="#"><i class="glyphicon glyphicon-chevron-up"></i><span style="display: none;">TOP</span></a>
+		</div>
+		
+		<!--头部黑色条-tips-->
+		<div id="TopTips" class="headerTopTips">
+			<p>夏季酬宾，现已开始。<a href="#">查看详情></a></p>
+			<a id="plusIcon" href="#" class="plusIcon">
+				<span class="glyphicon glyphicon-plus"></span>
+			</a>
+		</div>
+		
+		<!--显示顶部详细信息-->
+		<div id="showTopTips" class="headerTopTipsPlus">
+			<p>夏季酬宾，现已开始。</p>
+			<p>低至五折优惠，更享免费配送。 </p>
+			<p><a href="#"><strong>查看详情></strong></a></p>
+			<a href="#" id="closeIcon" class="closeIcon">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+		</div>
+		
+		<!--导航条-->
+		<div id="fixNav" class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav navbar-left leftPart">
+					<li class="nav-guide"><a href="#"><span class="glyphicon glyphicon-map-marker"></span>精品店指南</a></li>
+					<li class="nav-contact"><a href="#"><span class="Icon earphoneIcon"></span>联系我们</a>
+						<!--联系我们弹出框-->
+						<div class="contactUs">
+							<div class="contactMain">
+								<p>如果您有任何疑问与建议，敬请联系</p>
+								<button class="contactBtn" type="button">联系MK在线时尚顾问</button>
+								<span class="OR">OR</span>
+								<hr />
+								<div class="contactWechat clearfix">
+									<div class="fl innerTextBox">
+										<p class="youCan">您也可以</p>
+										<i class="fl"><img src="img/icon/icon-wechatscan.png"></i>
+										<div class="fr innerText">
+											<p>MICHAEL KORS</p>
+											<p>官方微信号</p>
+											<p>联系在线时尚顾问</p>
+										</div>
+									</div>
+									<span class="fr wechatPic"><img src="img/icon/icon-wechat.jpg"></span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!--搜索栏-->
+				<form class="navbar-form navbar-right searchBox">
+					<div class="form-group form-group-sm">
+						<div class="input-group">
+							<input class="form-control searchInput" id="searchInput" type="text" placeholder="搜索">
+							<a href="#" class="glyphicon glyphicon-search search-icon"></a>
+						</div>
+					</div>
+				</form>
+				<!--登录注册购物袋-->
+				<ul class="nav navbar-nav navbar-right rightPart" id="rightPart">
+					<li class="nav-login"><a href="#"><span class="glyphicon glyphicon-user"></span>登录</a>
+						<div class="Line"></div>
+						<!--登录hover下拉框-->
+						<div class="loginDiv">
+							<p><a>登录</a></p>
+							<form>
+								<label>手机号码</label><br />
+								<input type="text" placeholder="请输入您的手机号码" />
+								<h5>请输入您的手机号码</h5>
+								<br />
+								<label>密码</label><br />
+								<input type="password" placeholder="请输入密码" />
+								<h5>请输入您的密码</h5>
+								<br />
+								<span>
+									<input name="checkbox" type="checkbox" value="checkbox" checked="checked"></input>记住我
+									<label><a>忘记密码?</a></label>
+								</span>
+								<button>登录</button><br />
+								<label>还不是会员?</label><br />
+								<a href="register.html"><button>立即注册</button></a>
+							</form>
+						</div>
+					</li>
+					<li class="cut-off">丨</li>
+					<li class="nav-register"><a href="register.html"></span>注册</a></li>
+					<li class="nav-shopbag"><a href="#"><span class="Icon shopbagIcon"></span>购物袋</a>
+						<!--购物袋的下拉框-->
+						<div class="bagDiv">
+							<h1>购物袋</h1>
+							<p>您的购物袋里有<span>0</span>件商品</p>
+							<button>查看购物袋</button>
+						</div>
+					</li>
+				</ul>
+				<!--中间品牌名称--大的-->
+				<span class="brandHeader">
+					<h1 class="brandName"><a href="index.html">MICHAEL KORS</a></h1>
+				</span>
+				<!--小的-->
+				<span class="brandSmallHeader">
+					<h1 class="brandSmallName"><a href="index.html">MICHAEL KORS</a></h1>
+				</span>
+				<!--下面的导航条 真正的导航条-->
+				<div class="navTwo">
+					<ul class="navTwoul">
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">WOMEN 丨 女士</a>
+							<div class="hoverLine"></div>
+							<!--女士导航下拉项-->
+							<div class="womenDropList">
+								<div class="womenContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="second.html">新品上市</a></p>
+											<p><a href="">甜美海蓝</a></p>
+											<p><a href="">MERCER 系列手袋</a></p>
+											<p><a href="">CUSTOM KORS 定制系列</a></p>
+											<p><a href="">KORS STYLE 单品推荐</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">服饰</a></p>
+											<p><a href="">手袋</a></p>
+											<p><a href="">鞋膜</a></p>
+											<p><a href="">腕表</a></p>
+										</li>
+										<li><a href="fourth.html">配饰</a>
+											<p><a href="">MICHAEL KORS COLLECTION</a></p>
+											
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav1.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">MEN 丨 男士</a>
+							<div class="hoverLine"></div>
+							<!--男士导航下拉项-->
+							<div class="womenDropList shoe">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="">新品上市</a></p>
+											<p><a href="">星座钱夹</a></p>
+											<p><a href="">POLO 休闲T恤系列</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">手袋</a></p>
+											<p><a href="">配饰</a></p>
+											<p><a href="">服饰</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav2.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">手袋</a>
+							<div class="hoverLine"></div>
+							<!--手袋导航下拉项-->
+							<div class="womenDropList">
+								<div class="womenContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="">丝巾组合</a></p>
+											<p><a href="">MERCER 系列手袋</a></p>
+											<p><a href="">SCOUT 相机包系列</a></p>
+											<p><a href="">CUSTOM KORS 定制系列</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">托特包</a></p>
+											<p><a href="">手提包</a></p>
+											<p><a href="">单肩包</a></p>
+											<p><a href="">双肩背包</a></p>
+										</li>
+										<li style="padding-top: 2%;">
+											<p><a href="">斜挎包</a></p>
+											<p><a href="">钱夹</a></p>
+											<p><a href="">小皮件</a></p>
+											<p><a href="">MICHAEL KORS COLLECTION</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav3.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">鞋履</a>
+							<div class="hoverLine"></div>
+							<!--鞋履导航下拉项-->
+							<div class="womenDropList shoe">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="">POPPY 运动鞋履系列</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">运动鞋</a></p>
+											<p><a href="">平底鞋</a></p>
+											<p><a href="">高跟鞋</a></p>
+											<p><a href="">凉鞋</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav4.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">配饰</a>
+							<div class="hoverLine"></div>
+							<!--配饰导航下拉项-->
+							<div class="womenDropList shoe">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">甄选系列</a>
+											<p><a href="">甜美小物</a></p>
+											<p><a href="">缤纷挂件</a></p>
+										</li>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">香氛</a></p>
+											<p><a href="">钱夹</a></p>
+											<p><a href="">小皮件</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav5.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">腕表</a>
+							<div class="hoverLine"></div>
+							<!--腕表导航下拉项-->
+							<div class="womenDropList sale">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">女士腕表</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav6.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">礼品</a>
+							<div class="hoverLine"></div>
+							<!--礼品导航下拉项-->
+							<div class="womenDropList sale">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">女士礼品</a></p>
+											<p><a href="">男士礼品</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav7.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="padding: 0 7% 12px;">SALE 丨 优惠</a>
+							<div class="hoverLine"></div>
+							<!--优惠导航下拉项-->
+							<div class="womenDropList sale">
+								<div class="womenContent shoeContent">
+									<ul>
+										<li><a href="">品类</a>
+											<p><a href="">查看全部</a></p>
+											<p><a href="">女士</a></p>
+											<p><a href="">男士</a></p>
+										</li>
+										<li><a href="">畅销推荐</a>
+											<img src="img/nav/nav8.jpg" width="100%" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navTwoLi">
+							<a href="#" style="color: #AC8E4C;style="padding: 0 7% 12px;">DESTINATION KORS</a>
+							<div class="hoverLine" style="border-top: 3px #AC8E4C solid;width: 0px;"></div>
+							<!--destination导航下拉项-->
+							<div class="destination">
+								<div class="destinationText">
+									<p><a href="">JET SET</a></p>
+									<p><a href="">MICHAEL的挚爱</a></p>
+									<p><a href="">秀场</a></p>
+									<p><a href="">KORS CARES</a></p>
+								</div>
+							</div>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--小的导航条-->
+		<div class="smallNav clearfix">
+			<div class="leftList fl">
+				<a><span class="Icon navIcon"></span></a>
+			</div>
+			<div class="rightList fr">
+				<span class="Icon searchIcon"></span>
+				<span class="Icon shopbagIcon"></span>
+			</div>	
+			<div class="logoNav">
+				<a href="#"><img src="img/banner/logo.png"></a>
+			</div>
+		</div>
+		
+		<!--侧边的导航-->
+		<div class="smallNavWrap">
+			<div class="smallBgBlack"></div>
+			<div class="smallNavList">
+				<ul>
+					<li><a href="#">WOMEN 丨 女士</a></li>
+					<li><a href="#">MEN 丨 男士</a></li>
+					<li><a href="#">手袋</a></li>
+					<li><a href="#">鞋履</a></li>
+					<li><a href="#">配饰</a></li>
+					<li><a href="#">腕表</a></li>
+					<li><a href="#">礼品</a></li>
+					<li><a href="#">SALE 丨 优惠</a></li>
+					<li><a href="#">DESTINATION KORS</a></li>
+				</ul>
+				<p><a href=""><span class="glyphicon glyphicon-user"></span>登录</a>丨<a href="#"></span>注册</a></p>
+				<p><a href=""><span class="glyphicon glyphicon-map-marker"></span>精品店指南</a></p>
+				<p><a href=""><span class="Icon earphoneIcon"></span>联系我们</a></p>
+			</div>
+		</div>
+		
+		<!--第二页的主要内容-->
+		<div class="pageTwo">
+			<!--点击之后快速浏览-->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>							
+						</div>
+						<div class="modal-body">
+							<div class="ptShowModelPic">
+								<div class="ptSmallMP">
+									<img class="ptOc" src="img/modelpic/goodmod1.jpg" />
+									<img src="img/modelpic/goodmod2.jpg" />
+									<img src="img/modelpic/goodmod3.jpg" />
+									<img src="img/modelpic/goodmod4.jpg" />
+									<img src="img/modelpic/goodmod5.jpg" />									
+								</div>
+								<div class="ptBigMP">
+									<img src="img/modelpic/goodmod1.jpg" width="442px" height="595px" />
+									<!--<img src="img/modelpic/goodmod2.jpg" width="442px" height="595px" />
+									<img src="img/modelpic/goodmod3.jpg" width="442px" height="595px" />
+									<img src="img/modelpic/goodmod4.jpg" width="442px" height="595px" />
+									<img src="img/modelpic/goodmod5.jpg" width="442px" height="595px" />		-->
+								</div>
+							</div>
+							<div class="ptGoodsDetails">
+								<h6>MICHAEL MICHAEL KORS</h6>
+								<h1>无袖圆领提花连衣裙</h1>
+								<h6>款号：MU78W566PR456</h6>
+								<h1 style="padding-bottom: 5%;">¥3,150</h1>
+								<h5 style="text-decoration: underline;"><a href="third.html">查看详情</a></h5>
+								<h5 style="font-weight: bold;">颜色：<span style="font-weight: normal;">深蓝色</span></h5>
+								<p>
+									<a href="JavaScript:void(0);">
+										<img src="img/color/dress.jpg" />
+									</a>
+								</p>
+								<h4 style="font-weight: bold;">尺码<span style="font-weight: normal;text-decoration: underline;">尺码表</span></h4>	
+								<h6 style="color: #aaa;letter-spacing: 1px;">此款商品款型偏大，建议您选购偏小的尺码；</h6>
+								<div class="ptrSize">
+									<ul>
+										<li><a href="">00</a></li>
+										<li><a href="">0</a></li>
+										<li><a href="">2</a></li>
+										<li><a href="">4</a></li>
+										<li><a style="background: #e1e1e1;color: #707070;border-color: #e1e1e1;" href="">6</a></li>
+									</ul>
+								</div>
+								<h4 style="font-weight: bold;letter-spacing: 1px;">数量</h4>
+								<select>
+									<option>1</option>
+								</select>
+								<br />
+								<button style="margin-right: 4%;" type="button">加入购物袋</button>
+								<button class="ptrBuy" type="button">即刻选购</button>
+								<div class="ptrMore">
+									<span style="padding-right: 2%;"><i class="Icon heartIcon"></i>添加到心愿单</span>
+									<span><i class="glyphicon glyphicon-map-marker"></i>查找离您最近的店</span>
+									<span style="float: right;"><i class="Icon weiboIcon"></i></span>
+									<span style="float: right;padding-left: 2%;"><i class="Icon wechatIcon"></i></span>
+								</div>
+							</div>
+						</div>
+			
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal -->
+			</div>			
+			<section>
+				<p>
+					<a href="index.html">首页</a>
+					<a>></a>
+					<a href="#">WOMEN | 女士</a>
+					<a>></a>
+					<a href="#">新品上市-女士</a>
+				</p>
+			</section>
+			<div class="ptMain">
+				<div class="ptLeftPart">
+					<div class="ptCategory">
+						<span>
+							<h1>品类</h1>
+							<p><a href="">查看全部</a></p>
+							<p><a href="">服饰</a></p>
+							<p><a href="">手袋</a></p>
+							<p><a href="">鞋履</a></p>
+							<p><a href="">腕表</a></p>
+							<p><a href="">配饰</a></p>
+							<p><a href="">MICHEAL KORS COLLECTION</a></p>
+						</span>
+						<span>
+							<h1>甄选系列</h1>
+							<p><a href="">新品上市</a></p>
+							<p><a href="">甜美海蓝</a></p>
+							<p><a href="">MERCER 系列手袋</a></p>
+							<p><a href="">CUSTOM KORS 定制系列</a></p>
+							<p><a href="">KORS STYLE 单品推荐</a></p>
+						</span>
+					</div>
+					<div class="ptSelect">
+						<h1>筛选</h1>
+						<div class="ptSize">
+							<span class="size"><a>尺码<span class="glyphicon glyphicon-plus fr"></span></a></span>
+							<div>
+								<ul>
+									<li><a href="JavaScript:void(0);">XXS</a></li>
+									<li><a href="JavaScript:void(0);">XS</a></li>
+									<li><a href="JavaScript:void(0);">S</a></li>
+									<li><a href="JavaScript:void(0);">M</a></li>
+									<li><a href="JavaScript:void(0);">L</a></li>
+									<li><a href="JavaScript:void(0);">均码</a></li>
+									<li><a href="JavaScript:void(0);">00</a></li>
+									<li><a href="JavaScript:void(0);">0</a></li>
+									<li><a href="JavaScript:void(0);">2</a></li>
+									<li><a href="JavaScript:void(0);">4</a></li>	
+									<li><a href="JavaScript:void(0);">5</a></li>
+									<li><a href="JavaScript:void(0);">5.5</a></li>
+									<li><a href="JavaScript:void(0);">6</a></li>
+									<li><a href="JavaScript:void(0);">6.5</a></li>
+									<li><a href="JavaScript:void(0);">7</a></li>
+									<li><a href="JavaScript:void(0);">7.5</a></li>
+									<li><a href="JavaScript:void(0);">8</a></li>
+									<li><a href="JavaScript:void(0);">8.5</a></li>
+									<li><a href="JavaScript:void(0);">9</a></li>
+									<li><a href="JavaScript:void(0);">36</a></li>
+									<li><a href="JavaScript:void(0);">37</a></li>
+									<li><a href="JavaScript:void(0);">38</a></li>
+									<li><a href="JavaScript:void(0);">10</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="ptColor">
+							<span class="size"><a>颜色<span class="glyphicon glyphicon-minus fr"></span></a></span>
+							<div>
+								<h6></h6>
+								<ul>
+									<li><span>红色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/1.jpg" />
+										</a>
+									</li>
+									<li><span>粉红色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/2.jpg" />
+										</a>
+									</li>
+									<li><span>橙色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/3.jpg" />
+										</a>
+									</li>
+									<li><span>黄色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/4.jpg" />
+										</a>
+									</li>
+									<li><span>黑色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/5.jpg" />
+										</a>
+									</li>
+									<li><span>灰色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/6.jpg" />
+										</a>
+									</li>
+									<li><span>棕色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/7.jpg" />
+										</a>
+									</li>
+									<li><span>金色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/8.jpg" />
+										</a>
+									</li>
+									<li><span>银色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/9.jpg" />
+										</a>
+									</li>
+									<li><span>紫色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/10.jpg" />
+										</a>
+									</li>
+									<li><span>蓝色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/11.jpg" />
+										</a>
+									</li>
+									<li><span>白色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/12.jpg" />
+										</a>
+									</li>
+									<li><span>绿色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/13.jpg" />
+										</a>
+									</li>
+									<li><span>自然色</span>
+										<a href="JavaScript:void(0);">
+											<img src="img/color/14.jpg" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="ptPrice">
+							<span class="size"><a>价格<span class="glyphicon glyphicon-minus fr"></span></a></span>
+							<div>
+								<input name="checkbox" type="checkbox" value="checkbox"></input> 3000以下<br />
+								<input name="checkbox" type="checkbox" value="checkbox"></input> 3000-5000<br />
+								<input name="checkbox" type="checkbox" value="checkbox"></input> 5000-7000<br />
+								<input name="checkbox" type="checkbox" value="checkbox"></input> 7000-9000<br />
+								<input name="checkbox" type="checkbox" value="checkbox"></input> 9000以上<br />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ptRightPart">
+					<h5>新品上市-女士<i class="Icon ptDownIcon" style="vertical-align: middle;"></i>
+						<div class="ptNewList">
+							<div class="ptCategory"></div>
+						</div>
+					</h5>
+					<div class="ptSelectTitle">筛选 <span>+</span>
+						<div class="ptSelectDrop">
+							<span style="float: right;padding-right: 3%;"><a style="color: #BCBCBC;font-size: 12px;
+font-weight: normal;padding-right: 1px;" href=""><i style="padding-left: 4px;" class="glyphicon glyphicon-remove"></i></a></span>
+							<div class="ptSortTwo">
+								<h6>排序</h6>
+							</div>
+							<div class="ptSelect"></div>
+							<!--底部固定按钮-->
+							<div class="ptFixBtn">
+								<a href="second.html"><button src="second.html" class="ptBtnCancel" type="button">取消</button></a>
+								<button class="ptBtnSubmit" type="submit">提交</button>
+							</div>
+						</div>
+					</div>
+					<div class="ptNav">
+						<span>视图<a>2</a><a>4</a></span>
+						<i></i>
+						<span>排序：</span>
+						<div class="ptSortBig">
+							<a>默认排序<i class="Icon ptDownIcon"></i>
+								<div class="ptSortDiv">
+									<p><a>默认排序</a></p>
+									<p><a>新品上市</a></p>
+									<p><a>价格由低到高</a></p>
+									<p><a>价格由高到低</a></p>									
+								</div>
+							</a>
+						</div>
+						<h6>共124个商品</h6>
+					</div>
+					<div class="ptImgList">
+						<ul class="ptImgul">
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/1.jpg" width="100%">
+									<img src="img/shopimg/1-1.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a>
+									<i class="Icon heartIcon"></i>
+									<img href="third.html" src="img/shopimg/2.jpg" width="100%">
+									<img href="third.html" src="img/shopimg/2-2.jpg" width="100%" style="display: none;" />
+									<span data-toggle="modal" data-target="#myModal">快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/3.jpg" width="100%">
+									<img src="img/shopimg/3-3.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/4.jpg" width="100%">
+									<img src="img/shopimg/4-4.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>									
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>								
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/1.jpg" width="100%">
+									<img src="img/shopimg/1-1.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="third.html">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/2.jpg" width="100%">
+									<img src="img/shopimg/2-2.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/3.jpg" width="100%">
+									<img src="img/shopimg/3-3.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/4.jpg" width="100%">
+									<img src="img/shopimg/4-4.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>									
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>								
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/1.jpg" width="100%">
+									<img src="img/shopimg/1-1.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/2.jpg" width="100%">
+									<img src="img/shopimg/2-2.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/3.jpg" width="100%">
+									<img src="img/shopimg/3-3.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/4.jpg" width="100%">
+									<img src="img/shopimg/4-4.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>									
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>								
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/1.jpg" width="100%">
+									<img src="img/shopimg/1-1.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/2.jpg" width="100%">
+									<img src="img/shopimg/2-2.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/3.jpg" width="100%">
+									<img src="img/shopimg/3-3.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="Icon heartIcon"></i>
+									<img src="img/shopimg/4.jpg" width="100%">
+									<img src="img/shopimg/4-4.jpg" width="100%" style="display: none;" />
+									<span>快速浏览</span>
+								</a>
+								<a>									
+									<h3>MICHAEL MICHAEL KORS</h3>
+									<h4>Mercer 大号皮质手袋</h4>
+									<h5>¥4,200</h5>
+								</a>
+								<div class="ptColorChoice">
+									<a href="">
+										<img src="img/color/shop1.jpg" />
+									</a>
+								</div>								
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		
+
+		
+		
+
+	
+	
+		<!--尾部-->
+		<footer class="clearfix">
+			<div class="foLeftPart fl">
+				<span class="guide"><a href="#"><span class="glyphicon glyphicon-map-marker"></span> 精品店指南</a></span>
+				<p>从 MICHAEL KORS 订阅最新资讯</p>
+				<div class="inputBtn">
+					<input type="text" class="inputEmail"  placeholder="请输入您的电子邮箱..."  onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的电子邮箱...'"/>
+					<span class="inputAddBtn"><button class="btnRead" type="button">订阅</button></span>
+				</div>
+				<div class="lastLineIcon clearfix">
+					<ul>
+						<li><a href=""><span class="Icon weiboIcon"></span></a></li>
+						<li class="wechat"><a href=""><span class="Icon wechatIcon"></span></a></li>
+						<li><a href=""><span class="Icon youtubeIcon"></span></a></li>
+						<li class="tel"><a href=""><span class="Icon telIcon"></span>400-103-8882(周一至周日:早9点至晚10点)
+</a></li>
+						<li class="earphone"><a href=""><span class="Icon earphoneIcon"></span>在线时尚顾问｜ 微信时尚顾问</a></li>			
+					</ul>
+				</div>
+			</div>
+			<div class="foAboutUs fl">
+				<span class="us"><a>关于我们<span class="glyphicon glyphicon-plus fr"></span></a></span>
+				<p><a href="">KORS CARES</a></p>
+			</div>
+			<div class="foMyCount fl">
+				<span class="us"><a>我的账户<span class="glyphicon glyphicon-plus fr"></span></a></span>
+				<p><a href="">注册</a></p>
+				<p><a href="">账户首页</a></p>
+				<p><a href="">个人资料</a></p>
+				<p><a href="">地址簿</a></p>
+				<p><a href="">我的订单</a></p>
+				<p><a href="">我的心愿单</a></p>
+				<p><a href="">隐私条款</a></p>
+			</div>
+			<div class="foCusService fl">
+				<span class="us"><a>客户服务<span class="glyphicon glyphicon-plus fr"></span></a></span>
+				<p><a href="">FAQ</a></p>
+				<p><a href="">订单查询</a></p>
+				<p><a href="">退换货政策</a></p>
+				<p><a href="">质量保证和维修</a></p>
+				<p><a href="">会员权益</a></p>
+			</div>
+		</footer>
+		<div class="lastPart">
+			<p><a><span class="Icon policeIcon"></span>沪公网安备31010602000358号 | 沪ICP备13005807 | © 2017 MICHAEL KORS</a><a>隐私条款</a></p>
+			<p><a><span class="Icon policeIcon"></span>沪公网安备31010602000358号 <br> 沪ICP备13005807 <br> © 2017 MICHAEL KORS</a><br><br><a>隐私条款</a></p>
+		</div>	
+	</body>
+</html>
